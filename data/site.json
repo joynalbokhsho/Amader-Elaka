@@ -1,0 +1,122 @@
+{
+	"name": "Amader Elaka",
+	"tagline": "Bangladesh-er community on Discord — games, music, movies, football.",
+	"links": {
+		"discordInvite": "https://discord.gg/elaka"
+	},
+	"nav": {
+		"items": [
+			{ "label": "About", "href": "#about" },
+			{ "label": "Events", "href": "/events" },
+			{ "label": "Games", "href": "#games" },
+			{ "label": "Music", "href": "#music" },
+			{ "label": "Movies", "href": "#movies" },
+			{ "label": "Football", "href": "#football" },
+			{ "label": "Rules", "href": "/rules" },
+			{ "label": "Staff", "href": "#staff" },
+			{ "label": "Gallery", "href": "#gallery" },
+			{ "label": "FAQ", "href": "#faq" },
+			{ "label": "Contact", "href": "#contact" },
+			{ "label": "Join Discord", "href": "#join" }
+		]
+	},
+	"hero": {
+		"title": "Amader Elaka",
+		"subtitle": "Bangladesh-er community on Discord — games, music, movies, football.",
+		"primaryCtaLabel": "Join Discord",
+		"primaryCtaHref": "#join",
+		"secondaryCtaLabel": "Learn More",
+		"secondaryCtaHref": "#about"
+	},
+	"about": {
+		"title": "About",
+		"intro": "We are a chill Bangladesh community. Hop in for games, music, movies, football watch parties, and late-night adda.",
+		"features": [
+			{ "title": "Family Vibes", "desc": "Friendly, inclusive, and well-moderated hangout for everyone." },
+			{ "title": "24/7 Voice", "desc": "Jump into voice channels for games, music, and chit-chat." },
+			{ "title": "Weekly Events", "desc": "Tournaments, movie nights, football streams, trivia, and more." },
+			{ "title": "Bangla + English", "desc": "Be yourself. Speak Bangla or English—no pressure." }
+		]
+	},
+	"events": {
+		"title": "Events",
+		"subtitle": "Recurring community events to keep the hype alive.",
+		"list": [
+			{ "day": "Fri", "title": "Game Night", "desc": "Party games, custom lobbies, and ranked squad queues." },
+			{ "day": "Sat", "title": "Movie Night", "desc": "Community-voted films with synced watch and chat." },
+			{ "day": "Sun", "title": "Football Watch", "desc": "Live match chat: Premier League, UCL, and national team." }
+		]
+	},
+	"games": {
+		"title": "Games",
+		"subtitle": "Find teammates, LFG, and community leagues.",
+		"items": ["Valorant", "CS2", "PUBG", "Mobile Legends", "EA FC", "GTA Online", "Dota 2", "Minecraft"]
+	},
+	"music": {
+		"title": "Music",
+		"subtitle": "Queue your songs, vibe in voice, and share playlists.",
+		"items": ["Live DJ queues with bots", "Community playlists", "Chill, Lofi, EDM, Bangla hits"]
+	},
+	"movies": {
+		"title": "Movies",
+		"subtitle": "Watch together with synced reactions and polls.",
+		"items": ["Bangla Classics", "Bollywood & Hollywood", "Anime & Series"]
+	},
+	"football": {
+		"title": "Football",
+		"subtitle": "Match chats, live reactions, and post-game analysis.",
+		"items": ["Live match threads", "Fantasy leagues", "Memes and highlights"]
+	},
+	"rules": {
+		"title": "Rules",
+		"subtitle": "Be kind. Keep it clean. Respect everyone.",
+		"items": [
+			"Respect all members and staff.",
+			"No hate speech, harassment, or toxicity.",
+			"Use channels for their purpose.",
+			"No NSFW and no spam."
+		]
+	},
+	"staff": {
+		"title": "Staff",
+		"subtitle": "Meet the people who keep the server cozy.",
+		"members": [
+			{ "name": "Moderator 1", "timezone": "GMT+6" },
+			{ "name": "Moderator 2", "timezone": "GMT+6" },
+			{ "name": "Moderator 3", "timezone": "GMT+6" },
+			{ "name": "Moderator 4", "timezone": "GMT+6" }
+		]
+	},
+	"gallery": {
+		"title": "Gallery",
+		"subtitle": "Moments from our events and voice channels.",
+		"images": [
+			"https://i.ibb.co/FfBtmJ7/bdzone.jpg"
+		]
+	},
+	"testimonials": {
+		"title": "Testimonials",
+		"subtitle": "What our members say.",
+		"items": [
+			"Best Bangla community vibe!",
+			"Joined for games, stayed for friends.",
+			"Events are super fun every weekend."
+		]
+	},
+	"faq": {
+		"title": "FAQ",
+		"subtitle": "Quick answers to common questions.",
+		"items": [
+			{ "q": "Is it free to join?", "a": "Yes, 100% free." },
+			{ "q": "Any age restrictions?", "a": "13+ as per Discord ToS." },
+			{ "q": "Do you host tournaments?", "a": "Yes—follow #announcements for schedules." }
+		]
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "Have questions or ideas? Reach out.",
+		"email": "hello@amader-elaka.example.com",
+		"primaryCtaLabel": "Join Discord",
+		"secondaryCtaLabel": "Email Us"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "Amader Elaka",
+	"short_name": "AmaderElaka",
+	"theme_color": "#5865F2",
+	"background_color": "#1e1f22",
+	"display": "standalone",
+	"start_url": "/",
+	"icons": [
+		{ "src": "/logo.svg", "sizes": "256x256", "type": "image/svg+xml" }
+	]
+}
+
+
