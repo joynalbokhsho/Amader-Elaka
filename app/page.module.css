@@ -1,6 +1,6 @@
 .hero {
 	display: grid;
-	grid-template-columns: 1.2fr 0.8fr;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	gap: 48px;
 	padding: 96px 24px 64px;
@@ -8,12 +8,16 @@
 	margin: 0 auto;
 	width: 100%;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .heroContent {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .title {
@@ -73,7 +77,10 @@
 .section {
 	padding: 80px 0;
 	width: 100%;
+	max-width: 100vw;
 	overflow-x: hidden;
+	box-sizing: border-box;
+	position: relative;
 }
 
 .sectionAlt {
@@ -82,6 +89,36 @@
 	border-top: 1px solid var(--border);
 	border-bottom: 1px solid var(--border);
 	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+
+/* Prevent scroll bars during loading */
+.section::before,
+.sectionAlt::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: inherit;
+	z-index: -1;
+}
+
+/* Loading state to prevent scroll bars */
+.loading {
+	overflow-x: hidden !important;
+	position: relative;
+}
+
+/* Ensure all content stays within bounds */
+.section *,
+.sectionAlt * {
+	max-width: 100%;
+	box-sizing: border-box;
 	overflow-x: hidden;
 }
 
@@ -90,6 +127,9 @@
 	max-width: 900px;
 	padding: 0 24px;
 	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .featureGrid {
@@ -97,10 +137,11 @@
 	margin: 0 auto;
 	padding: 0 24px;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 16px;
 	width: 100%;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .card {
@@ -109,16 +150,26 @@
 	border-radius: 14px;
 	padding: 18px;
 	transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
-.card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.055); box-shadow: 0 10px 24px rgba(0,0,0,0.2); }
+.card:hover { 
+	transform: translateY(-1px) scale(1.005); 
+	background: rgba(255,255,255,0.055); 
+	box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
 
 .cardGrid {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 24px;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .gameCard {
@@ -128,6 +179,9 @@
 	padding: 18px;
 	font-weight: 800;
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .cardRow {
@@ -135,8 +189,11 @@
 	margin: 0 auto;
 	padding: 0 24px;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .timeline {
@@ -148,6 +205,9 @@
 	margin-right: auto;
 	display: grid;
 	gap: 16px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .timeline li {
@@ -159,6 +219,8 @@
 	border: 1px solid var(--border);
 	border-radius: 14px;
 	padding: 16px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 /* Event Categories */
@@ -168,6 +230,9 @@
 	padding: 0 24px;
 	display: grid;
 	gap: 32px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .allEvents h3 {
@@ -180,8 +245,11 @@
 
 .eventGrid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .eventCard {
@@ -193,6 +261,8 @@
 	position: relative;
 	overflow: hidden;
 	animation: slideInUp 0.6s ease-out;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .eventCard::before {
@@ -207,7 +277,7 @@
 }
 
 .eventCard:hover {
-	transform: translateY(-4px) scale(1.02);
+	transform: translateY(-2px) scale(1.005);
 	background: rgba(255,255,255,0.08);
 	box-shadow: 0 15px 35px rgba(0,0,0,0.3), 0 0 20px rgba(123,97,255,0.2);
 	border-color: var(--accent);
@@ -253,7 +323,7 @@
 }
 
 .eventCard:hover .eventHeader {
-	transform: translateX(5px);
+	transform: translateX(2px);
 }
 
 .eventHeader h4 {
@@ -262,6 +332,9 @@
 	margin: 0;
 	color: var(--foreground);
 	transition: color 200ms ease;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	max-width: 100%;
 }
 
 .eventCard:hover .eventHeader h4 {
@@ -302,10 +375,12 @@
 	gap: 12px;
 	margin-bottom: 16px;
 	transition: transform 200ms ease;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .eventCard:hover .eventDetails {
-	transform: translateX(3px);
+	transform: translateX(1px);
 }
 
 .eventDetails span {
@@ -343,7 +418,7 @@
 .eventCard:hover .eventLeagues,
 .eventCard:hover .eventPrizes {
 	background: rgba(255,255,255,0.06);
-	transform: translateX(5px);
+	transform: translateX(2px);
 	border-left-width: 5px;
 }
 
@@ -398,7 +473,7 @@
 }
 
 .upcomingCard:hover {
-	transform: translateY(-4px) scale(1.02);
+	transform: translateY(-4px) scale(1.01);
 	box-shadow: 0 15px 35px rgba(0,0,0,0.3), 0 0 20px rgba(14,165,234,0.2);
 	border-color: var(--accent-2);
 }
@@ -420,7 +495,7 @@
 }
 
 .upcomingCard:hover .upcomingHeader {
-	transform: translateX(5px);
+	transform: translateX(2px);
 }
 
 .upcomingHeader h4 {

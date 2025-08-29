@@ -6,11 +6,11 @@
 	},
 	"nav": {
 		"items": [
-			{ "label": "About", "href": "#about" },
-			{ "label": "Events", "href": "#events" },
+			{ "label": "About", "href": "/#about" },
+			{ "label": "Events", "href": "/#events" },
 			{ "label": "Rules", "href": "/rules" },
-			{ "label": "Contact", "href": "#contact" },
-			{ "label": "Join Discord", "href": "#join" }
+			{ "label": "Contact", "href": "/#contact" },
+			{ "label": "Join Discord", "href": "/#join" }
 		]
 	},
 	"hero": {

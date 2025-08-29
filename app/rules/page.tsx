@@ -63,37 +63,11 @@ export default function RulesPage() {
 					position: 'relative'
 				}}
 			>
-				<motion.div
-					style={{
-						position: 'absolute',
-						top: '-20px',
-						left: '50%',
-						transform: 'translateX(-50%)',
-						width: '60px',
-						height: '60px',
-						background: 'linear-gradient(135deg, var(--accent), var(--accent-2))',
-						borderRadius: '50%',
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-						fontSize: '24px',
-						color: 'white',
-						boxShadow: '0 8px 32px rgba(123, 97, 255, 0.3)',
-						zIndex: 1
-					}}
-					whileHover={{ 
-						scale: 1.1, 
-						rotate: 360,
-						transition: { duration: 0.5 }
-					}}
-				>
-					📋
-				</motion.div>
 				
 				<motion.h1 
 					style={{ 
 						fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
-						margin: '40px 0 16px 0',
+						margin: '50px 0 16px 0',
 						background: 'linear-gradient(135deg, var(--accent), var(--accent-2))',
 						WebkitBackgroundClip: 'text',
 						backgroundClip: 'text',

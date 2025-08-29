@@ -1,172 +1,534 @@
 {
 	"title": "Community Rules",
-	"subtitle": "Be kind. Keep it clean. Respect everyone.",
+	"subtitle": "Keep our community safe, friendly, and enjoyable for everyone.",
 	"categories": [
 		{
 			"id": "general",
-			"name": "General Rules",
-			"description": "Basic community guidelines that apply to everyone",
+			"name": "General",
+			"description": "Basic community guidelines and behavior standards",
 			"icon": "🏠"
 		},
 		{
 			"id": "chat",
 			"name": "Chat & Communication",
-			"description": "Guidelines for text and voice communication",
+			"description": "Rules for text and voice channels",
 			"icon": "💬"
 		},
 		{
 			"id": "gaming",
-			"name": "Gaming Rules",
-			"description": "Specific rules for gaming activities and tournaments",
+			"name": "Gaming",
+			"description": "Gaming-related rules and etiquette",
 			"icon": "🎮"
 		},
 		{
 			"id": "events",
-			"name": "Event Guidelines",
-			"description": "Rules for participating in community events",
+			"name": "Events & Activities",
+			"description": "Rules for community events and activities",
 			"icon": "🎉"
 		},
 		{
 			"id": "moderation",
-			"name": "Moderation & Enforcement",
-			"description": "How rules are enforced and moderation works",
+			"name": "Moderation & Appeals",
+			"description": "How moderation works and appeal process",
 			"icon": "🛡️"
+		},
+		{
+			"id": "safety",
+			"name": "Safety & Privacy",
+			"description": "Personal safety and privacy protection",
+			"icon": "🔒"
+		},
+		{
+			"id": "content",
+			"name": "Content & Media",
+			"description": "Rules for sharing content, images, and media",
+			"icon": "📷"
+		},
+		{
+			"id": "voice",
+			"name": "Voice Channels",
+			"description": "Specific rules for voice channel behavior",
+			"icon": "🎤"
 		}
 	],
 	"rules": [
 		{
-			"id": "respect",
+			"id": "gen-1",
 			"title": "Respect All Members",
-			"description": "Treat everyone with kindness and respect. No discrimination based on race, gender, religion, or background.",
+			"description": "Treat every member with kindness, respect, and dignity. No discrimination based on race, ethnicity, nationality, religion, gender, sexual orientation, age, or disability.",
 			"category": "general",
 			"severity": "high",
-			"consequence": "Warning or temporary ban"
+			"consequence": "Warning, temporary mute, or ban depending on severity"
 		},
 		{
-			"id": "no-harassment",
-			"title": "No Harassment or Bullying",
-			"description": "Harassment, bullying, or any form of targeted abuse is strictly prohibited.",
+			"id": "gen-2",
+			"title": "No Hate Speech or Harassment",
+			"description": "Absolutely no hate speech, harassment, bullying, or targeted abuse. This includes slurs, threats, and any form of intimidation.",
 			"category": "general",
 			"severity": "high",
-			"consequence": "Immediate ban"
+			"consequence": "Immediate ban with possibility of appeal"
 		},
 		{
-			"id": "no-toxicity",
-			"title": "No Toxic Behavior",
-			"description": "Avoid toxic behavior, excessive complaining, or creating negative atmosphere.",
-			"category": "general",
-			"severity": "medium",
-			"consequence": "Warning or timeout"
-		},
-		{
-			"id": "appropriate-language",
-			"title": "Appropriate Language",
-			"description": "Keep language family-friendly. No excessive swearing, offensive slurs, or inappropriate content.",
-			"category": "chat",
-			"severity": "medium",
-			"consequence": "Warning or message deletion"
-		},
-		{
-			"id": "no-spam",
-			"title": "No Spam or Flooding",
-			"description": "Don't spam messages, emojis, or flood channels with repetitive content.",
-			"category": "chat",
-			"severity": "medium",
-			"consequence": "Warning or timeout"
-		},
-		{
-			"id": "voice-etiquette",
-			"title": "Voice Channel Etiquette",
-			"description": "Be mindful of others in voice channels. Don't scream, play loud music, or create excessive noise.",
-			"category": "chat",
-			"severity": "medium",
-			"consequence": "Voice timeout or warning"
-		},
-		{
-			"id": "no-cheating",
-			"title": "No Cheating or Hacking",
-			"description": "Cheating, hacking, or using unfair advantages in games is not allowed.",
-			"category": "gaming",
-			"severity": "high",
-			"consequence": "Gaming ban or server ban"
-		},
-		{
-			"id": "sportsmanship",
-			"title": "Good Sportsmanship",
-			"description": "Maintain good sportsmanship in games. No rage quitting, trash talking, or unsportsmanlike conduct.",
-			"category": "gaming",
-			"severity": "medium",
-			"consequence": "Warning or gaming timeout"
-		},
-		{
-			"id": "tournament-rules",
-			"title": "Follow Tournament Rules",
-			"description": "When participating in tournaments, follow all specific rules and guidelines provided.",
-			"category": "gaming",
-			"severity": "medium",
-			"consequence": "Tournament disqualification"
-		},
-		{
-			"id": "event-participation",
-			"title": "Active Event Participation",
-			"description": "When joining events, be an active participant. Don't join just to spectate without permission.",
-			"category": "events",
-			"severity": "low",
-			"consequence": "Event removal"
-		},
-		{
-			"id": "event-respect",
-			"title": "Respect Event Hosts",
-			"description": "Listen to event hosts and moderators. Follow their instructions during events.",
-			"category": "events",
-			"severity": "medium",
-			"consequence": "Event ban or warning"
-		},
-		{
-			"id": "no-nsfw",
-			"title": "No NSFW Content",
-			"description": "No adult content, explicit images, or inappropriate material of any kind.",
+			"id": "gen-3",
+			"title": "Be 13+ Years Old",
+			"description": "You must be at least 13 years old to join this server, as per Discord's Terms of Service. Lying about your age will result in immediate removal.",
 			"category": "general",
 			"severity": "high",
-			"consequence": "Immediate ban"
+			"consequence": "Immediate ban without appeal"
 		},
 		{
-			"id": "channel-purpose",
-			"title": "Use Channels for Purpose",
-			"description": "Post content in appropriate channels. Don't post gaming content in general chat, etc.",
-			"category": "chat",
-			"severity": "low",
-			"consequence": "Message deletion or warning"
+			"id": "gen-4",
+			"title": "No Impersonation",
+			"description": "Do not impersonate staff members, other users, or any public figures. This includes using similar usernames, avatars, or claiming to be someone you're not.",
+			"category": "general",
+			"severity": "medium",
+			"consequence": "Warning and forced username/avatar change"
 		},
 		{
-			"id": "no-advertising",
-			"title": "No Unauthorized Advertising",
-			"description": "Don't advertise other servers, products, or services without permission.",
+			"id": "gen-5",
+			"title": "No Advertising or Self-Promotion",
+			"description": "No advertising, self-promotion, or spam without permission from staff. This includes Discord invites, social media links, and business promotions.",
 			"category": "general",
 			"severity": "medium",
 			"consequence": "Message deletion and warning"
 		},
 		{
-			"id": "moderator-respect",
-			"title": "Respect Moderators",
-			"description": "Respect moderator decisions. If you disagree, discuss it privately, not in public channels.",
-			"category": "moderation",
-			"severity": "medium",
-			"consequence": "Warning or timeout"
+			"id": "gen-6",
+			"title": "Follow Discord ToS",
+			"description": "All Discord Terms of Service and Community Guidelines must be followed. Violating Discord's ToS will result in immediate action.",
+			"category": "general",
+			"severity": "high",
+			"consequence": "Immediate ban and report to Discord"
 		},
 		{
-			"id": "appeal-process",
-			"title": "Appeal Process",
-			"description": "If you believe a moderation action was unfair, contact moderators privately to discuss.",
+			"id": "gen-7",
+			"title": "No Drama or Toxicity",
+			"description": "Keep the community positive. No drama, unnecessary arguments, or toxic behavior that ruins the experience for others.",
+			"category": "general",
+			"severity": "medium",
+			"consequence": "Warning, temporary mute, or timeout"
+		},
+		{
+			"id": "chat-1",
+			"title": "Use Appropriate Channels",
+			"description": "Post content in the correct channels. Gaming discussions go in gaming channels, general chat in general channels, etc.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Message deletion and reminder"
+		},
+		{
+			"id": "chat-2",
+			"title": "No Spam or Flooding",
+			"description": "No rapid-fire messages, repeated content, or excessive use of caps, emojis, or special characters that disrupt chat flow.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Temporary mute (5-30 minutes)"
+		},
+		{
+			"id": "chat-3",
+			"title": "No Inappropriate Language",
+			"description": "Keep language family-friendly. No excessive cursing, vulgar language, or inappropriate jokes that make others uncomfortable.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Warning and temporary mute"
+		},
+		{
+			"id": "chat-4",
+			"title": "No Political or Religious Debates",
+			"description": "Avoid heated political or religious discussions that can cause arguments and division in the community.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Message deletion and warning"
+		},
+		{
+			"id": "chat-5",
+			"title": "No Personal Information",
+			"description": "Do not share personal information about yourself or others, including phone numbers, addresses, real names, or private details.",
+			"category": "chat",
+			"severity": "high",
+			"consequence": "Message deletion, warning, and possible ban"
+		},
+		{
+			"id": "chat-6",
+			"title": "No Begging or Scamming",
+			"description": "No begging for money, items, or favors. No scams, phishing attempts, or attempts to deceive other members.",
+			"category": "chat",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "chat-7",
+			"title": "Respect Language Preferences",
+			"description": "This is a Bangla and English community. Feel free to use either language, but be respectful of others' language preferences.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Friendly reminder"
+		},
+		{
+			"id": "chat-8",
+			"title": "No Chain Messages or Copy-Pasta",
+			"description": "No chain messages, copy-pasta, or viral content that encourages spam or disrupts normal conversation.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Message deletion and warning"
+		},
+		{
+			"id": "game-1",
+			"title": "No Cheating or Hacking Discussion",
+			"description": "Do not discuss, promote, or share information about cheats, hacks, exploits, or any unfair gaming practices.",
+			"category": "gaming",
+			"severity": "high",
+			"consequence": "Warning and temporary mute"
+		},
+		{
+			"id": "game-2",
+			"title": "Be a Good Teammate",
+			"description": "In team games, be supportive and helpful. No toxic behavior, blaming teammates, or intentionally throwing games.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Warning and temporary voice channel ban"
+		},
+		{
+			"id": "game-3",
+			"title": "No Game Spoilers",
+			"description": "Do not spoil games, movies, or TV shows for others without warning. Use spoiler tags when discussing recent releases.",
+			"category": "gaming",
+			"severity": "low",
+			"consequence": "Message deletion and reminder"
+		},
+		{
+			"id": "game-4",
+			"title": "Respect Gaming Skill Levels",
+			"description": "Be patient with new players and respect different skill levels. No mocking or belittling others for their gaming abilities.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Warning and temporary mute"
+		},
+		{
+			"id": "game-5",
+			"title": "No Gaming Account Trading",
+			"description": "No trading, selling, or sharing gaming accounts, as this often violates game terms of service and can be unsafe.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Message deletion and warning"
+		},
+		{
+			"id": "game-6",
+			"title": "Use LFG Channels Properly",
+			"description": "When looking for groups, be clear about your requirements, skill level, and availability. No spamming LFG requests.",
+			"category": "gaming",
+			"severity": "low",
+			"consequence": "Message deletion and reminder"
+		},
+		{
+			"id": "event-1",
+			"title": "Respect Event Rules",
+			"description": "Follow all specific rules for community events, tournaments, and activities. Event organizers' decisions are final.",
+			"category": "events",
+			"severity": "medium",
+			"consequence": "Removal from event and warning"
+		},
+		{
+			"id": "event-2",
+			"title": "No Event Disruption",
+			"description": "Do not intentionally disrupt or sabotage community events, tournaments, or activities.",
+			"category": "events",
+			"severity": "high",
+			"consequence": "Temporary ban and removal from future events"
+		},
+		{
+			"id": "event-3",
+			"title": "Be Punctual for Events",
+			"description": "If you sign up for an event, be on time and communicate if you need to cancel or will be late.",
+			"category": "events",
+			"severity": "low",
+			"consequence": "Warning and possible removal from future events"
+		},
+		{
+			"id": "event-4",
+			"title": "No Event Cheating",
+			"description": "No cheating, exploiting, or unfair advantages during community tournaments or competitive events.",
+			"category": "events",
+			"severity": "high",
+			"consequence": "Disqualification and temporary ban"
+		},
+		{
+			"id": "mod-1",
+			"title": "Respect Staff Decisions",
+			"description": "Staff decisions are final. Arguing with moderators publicly will result in additional consequences.",
 			"category": "moderation",
-			"severity": "info",
-			"consequence": "N/A"
+			"severity": "medium",
+			"consequence": "Warning and possible escalation of punishment"
+		},
+		{
+			"id": "mod-2",
+			"title": "No Moderation Evasion",
+			"description": "Do not attempt to evade moderation actions by creating alt accounts, using VPNs, or other methods.",
+			"category": "moderation",
+			"severity": "high",
+			"consequence": "Permanent ban on all accounts"
+		},
+		{
+			"id": "mod-3",
+			"title": "Appeal Process",
+			"description": "If you believe a moderation action was unfair, contact a staff member privately. Public appeals will be ignored.",
+			"category": "moderation",
+			"severity": "low",
+			"consequence": "Appeal ignored if done publicly"
+		},
+		{
+			"id": "mod-4",
+			"title": "No Staff Harassment",
+			"description": "Do not harass, threaten, or repeatedly message staff members. This will result in immediate action.",
+			"category": "moderation",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "safety-1",
+			"title": "No Doxxing",
+			"description": "Never share or threaten to share someone's personal information, including real name, address, phone number, or workplace.",
+			"category": "safety",
+			"severity": "high",
+			"consequence": "Immediate permanent ban and report to Discord"
+		},
+		{
+			"id": "safety-2",
+			"title": "No Threats or Violence",
+			"description": "No threats of violence, harm, or any form of intimidation against other members or their property.",
+			"category": "safety",
+			"severity": "high",
+			"consequence": "Immediate permanent ban and possible legal action"
+		},
+		{
+			"id": "safety-3",
+			"title": "Report Suspicious Behavior",
+			"description": "If you see suspicious behavior, harassment, or rule violations, report it to staff immediately. Do not confront rule breakers yourself.",
+			"category": "safety",
+			"severity": "low",
+			"consequence": "Thank you for helping keep the community safe"
+		},
+		{
+			"id": "safety-4",
+			"title": "No Stalking or Harassment",
+			"description": "Do not follow, stalk, or repeatedly contact members who have asked you to stop or who are clearly uncomfortable.",
+			"category": "safety",
+			"severity": "high",
+			"consequence": "Warning, temporary ban, or permanent ban"
+		},
+		{
+			"id": "content-1",
+			"title": "No NSFW Content",
+			"description": "No pornographic, sexually explicit, or inappropriate content. This includes images, videos, links, and text.",
+			"category": "content",
+			"severity": "high",
+			"consequence": "Immediate ban and report to Discord"
+		},
+		{
+			"id": "content-2",
+			"title": "No Gore or Violence",
+			"description": "No graphic violence, gore, or disturbing content that could upset or traumatize other members.",
+			"category": "content",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "content-3",
+			"title": "Respect Copyright",
+			"description": "Do not share copyrighted content without permission. This includes music, videos, images, and other media.",
+			"category": "content",
+			"severity": "medium",
+			"consequence": "Content removal and warning"
+		},
+		{
+			"id": "content-4",
+			"title": "No Malicious Links",
+			"description": "Do not share links to malicious websites, scams, or content that could harm other users' devices.",
+			"category": "content",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "content-5",
+			"title": "Appropriate Profile Pictures",
+			"description": "Keep profile pictures and usernames appropriate and family-friendly. No offensive, sexual, or inappropriate content.",
+			"category": "content",
+			"severity": "medium",
+			"consequence": "Forced change and warning"
+		},
+		{
+			"id": "voice-1",
+			"title": "No Voice Channel Disruption",
+			"description": "Do not intentionally disrupt voice channels with loud noises, music, or other audio that annoys other users.",
+			"category": "voice",
+			"severity": "medium",
+			"consequence": "Voice channel ban and warning"
+		},
+		{
+			"id": "voice-2",
+			"title": "Use Push-to-Talk When Appropriate",
+			"description": "Use push-to-talk in busy voice channels to avoid background noise and echo. Follow channel-specific rules.",
+			"category": "voice",
+			"severity": "low",
+			"consequence": "Friendly reminder"
+		},
+		{
+			"id": "voice-3",
+			"title": "No Voice Chat Recording",
+			"description": "Do not record voice conversations without explicit permission from all participants.",
+			"category": "voice",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "voice-4",
+			"title": "Respect Voice Channel Purpose",
+			"description": "Use voice channels for their intended purpose. Gaming channels for gaming, music channels for music, etc.",
+			"category": "voice",
+			"severity": "low",
+			"consequence": "Moved to appropriate channel"
+		},
+		{
+			"id": "voice-5",
+			"title": "No Voice Channel Hopping",
+			"description": "Do not rapidly join and leave voice channels repeatedly, as this can be disruptive and annoying.",
+			"category": "voice",
+			"severity": "medium",
+			"consequence": "Temporary voice channel ban"
+		},
+		{
+			"id": "voice-6",
+			"title": "No Inappropriate Voice Content",
+			"description": "Keep voice chat appropriate and family-friendly. No inappropriate language, sounds, or content.",
+			"category": "voice",
+			"severity": "medium",
+			"consequence": "Voice channel ban and warning"
+		},
+		{
+			"id": "gen-8",
+			"title": "No Exploiting Loopholes",
+			"description": "Do not try to find loopholes in the rules or exploit technicalities. The spirit of the rules matters more than the letter.",
+			"category": "general",
+			"severity": "medium",
+			"consequence": "Warning and clarification of rules"
+		},
+		{
+			"id": "gen-9",
+			"title": "Be Patient with New Members",
+			"description": "Welcome new members and help them understand the community. Be patient and helpful rather than dismissive.",
+			"category": "general",
+			"severity": "low",
+			"consequence": "Friendly reminder about community values"
+		},
+		{
+			"id": "gen-10",
+			"title": "Report Bugs and Issues",
+			"description": "If you find bugs, issues, or problems with the server, report them to staff rather than exploiting them.",
+			"category": "general",
+			"severity": "low",
+			"consequence": "Thank you for helping improve the server"
+		},
+		{
+			"id": "chat-9",
+			"title": "No Backseat Gaming",
+			"description": "Unless asked, do not give unsolicited advice or criticism about how someone is playing a game.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Friendly reminder"
+		},
+		{
+			"id": "chat-10",
+			"title": "Use Threads for Long Discussions",
+			"description": "For long discussions or detailed conversations, use threads to keep channels organized and readable.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Friendly reminder"
+		},
+		{
+			"id": "game-7",
+			"title": "No Game Account Sharing",
+			"description": "Do not share your gaming account credentials with others, as this can lead to account theft and violates most game ToS.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Warning about account security"
+		},
+		{
+			"id": "game-8",
+			"title": "Respect Game-Specific Rules",
+			"description": "Follow the rules and guidelines of the specific games you're playing, especially in competitive modes.",
+			"category": "gaming",
+			"severity": "low",
+			"consequence": "Reminder about game etiquette"
+		},
+		{
+			"id": "event-5",
+			"title": "Participate Actively",
+			"description": "When joining events, participate actively and engage with the community. Don't just lurk without contributing.",
+			"category": "events",
+			"severity": "low",
+			"consequence": "Friendly encouragement to participate"
+		},
+		{
+			"id": "event-6",
+			"title": "Respect Event Schedules",
+			"description": "Be aware of event schedules and time zones. Don't demand events be rescheduled for your convenience.",
+			"category": "events",
+			"severity": "low",
+			"consequence": "Friendly reminder about time zones"
+		},
+		{
+			"id": "safety-5",
+			"title": "No Catfishing or Deception",
+			"description": "Do not pretend to be someone you're not, use fake photos, or deceive others about your identity.",
+			"category": "safety",
+			"severity": "medium",
+			"consequence": "Warning and possible ban"
+		},
+		{
+			"id": "safety-6",
+			"title": "Be Cautious with Personal Info",
+			"description": "Be careful about sharing personal information, even in private messages. Not everyone has good intentions.",
+			"category": "safety",
+			"severity": "low",
+			"consequence": "Friendly safety reminder"
+		},
+		{
+			"id": "content-6",
+			"title": "No Excessive Selfies",
+			"description": "While occasional selfies are fine, don't spam the chat with excessive photos of yourself.",
+			"category": "content",
+			"severity": "low",
+			"consequence": "Friendly reminder about chat balance"
+		},
+		{
+			"id": "content-7",
+			"title": "Use Spoiler Tags",
+			"description": "Use spoiler tags when discussing plot points, endings, or major events from recent games, movies, or shows.",
+			"category": "content",
+			"severity": "low",
+			"consequence": "Message deletion and reminder"
+		},
+		{
+			"id": "voice-7",
+			"title": "No Background Noise",
+			"description": "Minimize background noise in voice channels. Use noise suppression and keep your microphone away from loud sources.",
+			"category": "voice",
+			"severity": "low",
+			"consequence": "Friendly reminder about audio quality"
+		},
+		{
+			"id": "voice-8",
+			"title": "Respect Voice Channel Limits",
+			"description": "Do not exceed voice channel user limits or try to bypass restrictions.",
+			"category": "voice",
+			"severity": "low",
+			"consequence": "Moved to appropriate channel"
 		}
 	],
 	"settings": {
-		"lastUpdated": "2025-08-29",
+		"lastUpdated": "December 2024",
 		"version": "2.0",
-		"contactModerators": "DM any moderator for questions or appeals",
-		"ruleChanges": "Rules may be updated as the community grows"
+		"contactModerators": "If you have questions about these rules or need to report an issue, please contact a moderator or use the #modmail channel.",
+		"ruleChanges": "These rules may be updated periodically. Major changes will be announced in #announcements. Continued participation in the server indicates acceptance of these rules."
 	}
 }

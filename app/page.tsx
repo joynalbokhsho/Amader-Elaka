@@ -6,15 +6,22 @@ import site from '@/data/site.json';
 import eventsData from '@/data/events.json';
 import { AnimateOnView } from '@/components/AnimateOnView';
 import { Lightbox } from '@/components/Lightbox';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
   const [lbOpen, setLbOpen] = useState(false);
   const [lbIndex, setLbIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const galleryImages = (site.gallery.images.length ? site.gallery.images : Array.from({ length: 8 }).map((_, i) => `/api/placeholder/800/600?i=${i}`));
 
+  // Prevent scroll bars during loading
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
+    <div className={isLoading ? styles.loading : ''}>
       <section className={styles.hero}>
         <AnimateOnView className={styles.heroContent}>
           <h1 className={styles.title}>{site.hero.title}</h1>
@@ -285,7 +292,7 @@ export default function HomePage() {
       {lbOpen && (
         <Lightbox images={galleryImages} initialIndex={lbIndex} onClose={() => setLbOpen(false)} />
       )}
-    </>
+    </div>
   );
 }
 
