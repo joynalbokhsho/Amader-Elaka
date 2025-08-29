@@ -6,6 +6,8 @@
 	padding: 96px 24px 64px;
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .heroContent {
@@ -70,6 +72,8 @@
 /* Sections */
 .section {
 	padding: 80px 0;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .sectionAlt {
@@ -77,6 +81,8 @@
 	background: rgba(255,255,255,0.02);
 	border-top: 1px solid var(--border);
 	border-bottom: 1px solid var(--border);
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .sectionHeader {
@@ -93,6 +99,8 @@
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 16px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .card {

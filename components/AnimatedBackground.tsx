@@ -19,7 +19,11 @@ export function AnimatedBackground() {
 		};
 		window.addEventListener('resize', onResize);
 
-		const particleCount = Math.min(80, Math.floor((width * height) / 20000));
+		// Reduce particle count on mobile for better performance
+		const isMobile = window.innerWidth <= 768;
+		const baseParticleCount = Math.min(80, Math.floor((width * height) / 20000));
+		const particleCount = isMobile ? Math.floor(baseParticleCount * 0.6) : baseParticleCount;
+		
 		const particles = Array.from({ length: particleCount }).map(() => ({
 			x: Math.random() * width,
 			y: Math.random() * height,
@@ -29,8 +33,19 @@ export function AnimatedBackground() {
 		}));
 
 		let raf = 0;
-		const loop = () => {
+		let lastTime = 0;
+		const targetFPS = isMobile ? 30 : 60; // Lower FPS on mobile
+		const frameInterval = 1000 / targetFPS;
+
+		const loop = (currentTime: number) => {
 			raf = requestAnimationFrame(loop);
+			
+			// Throttle FPS on mobile
+			if (isMobile && currentTime - lastTime < frameInterval) {
+				return;
+			}
+			lastTime = currentTime;
+
 			ctx.clearRect(0, 0, width, height);
 
 			const grad = ctx.createLinearGradient(0, 0, width, height);
@@ -54,7 +69,8 @@ export function AnimatedBackground() {
 				ctx.fill();
 			});
 		};
-		loop();
+		loop(0);
+		
 		return () => {
 			cancelAnimationFrame(raf);
 			window.removeEventListener('resize', onResize);
