@@ -112,9 +112,104 @@ a { color: inherit; }
 	color: var(--muted);
 	text-decoration: none;
 	transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+	font-size: 14px;
 }
 
 .navLink:hover { color: var(--foreground); background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+
+/* Mobile menu button */
+.mobileMenuBtn {
+	display: none;
+	background: none;
+	border: none;
+	color: var(--foreground);
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: background 0.15s ease;
+}
+
+.mobileMenuBtn:hover {
+	background: rgba(255,255,255,0.06);
+}
+
+.mobileMenuBtn svg {
+	width: 24px;
+	height: 24px;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+	.navInner {
+		height: 64px;
+	}
+	
+	.brandLogo {
+		width: 24px;
+		height: 24px;
+	}
+	
+	.navLinks {
+		position: fixed;
+		top: 64px;
+		left: 0;
+		right: 0;
+		background: rgba(15,19,24,0.95);
+		backdrop-filter: blur(12px) saturate(140%);
+		border-bottom: 1px solid var(--border);
+		flex-direction: column;
+		padding: 16px;
+		gap: 4px;
+		transform: translateY(-100%);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+		z-index: 19;
+	}
+	
+	.navLinks.open {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.navLink {
+		width: 100%;
+		padding: 12px 16px;
+		border-radius: 8px;
+		justify-content: flex-start;
+		font-size: 16px;
+	}
+	
+	.mobileMenuBtn {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 0 16px;
+	}
+	
+	.navInner {
+		height: 60px;
+	}
+	
+	.brandLogo {
+		width: 22px;
+		height: 22px;
+	}
+	
+	.navLinks {
+		top: 60px;
+		padding: 12px;
+	}
+	
+	.navLink {
+		padding: 10px 14px;
+		font-size: 15px;
+	}
+}
 
 .footer {
 	border-top: 1px solid var(--border);
@@ -128,6 +223,23 @@ a { color: inherit; }
 	align-items: center;
 	gap: 16px;
 	padding: 18px 0;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+	.footerInner {
+		flex-direction: column;
+		gap: 12px;
+		padding: 16px 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.footerInner {
+		padding: 14px 0;
+		gap: 10px;
+	}
 }
 
 .discordBtn {

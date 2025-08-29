@@ -1,0 +1,212 @@
+{
+	"title": "Events",
+	"subtitle": "Community events and activities - join us for fun and friendship!",
+	"categories": [
+		{
+			"id": "weekly",
+			"name": "Weekly Events",
+			"description": "Regular events that happen every week"
+		},
+		{
+			"id": "monthly",
+			"name": "Monthly Events", 
+			"description": "Special events that happen monthly"
+		},
+		{
+			"id": "special",
+			"name": "Special Events",
+			"description": "One-time or seasonal events"
+		}
+	],
+	"events": [
+		{
+			"id": "game-night-1",
+			"title": "Game Night",
+			"description": "Party games, custom lobbies, and ranked squad queues.",
+			"date": "2024-01-26",
+			"time": "8:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/game-night.jpg",
+			"games": ["Valorant", "CS2", "PUBG", "Mobile Legends", "EA FC", "GTA Online"],
+			"host": "Community",
+			"maxParticipants": 50,
+			"requirements": "Discord account, game installed"
+		},
+		{
+			"id": "movie-night-1",
+			"title": "Movie Night",
+			"description": "Community-voted films with synced watch and chat.",
+			"date": "2024-01-27",
+			"time": "9:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/movie-night.jpg",
+			"genres": ["Bangla Classics", "Bollywood", "Hollywood", "Anime"],
+			"host": "Movie Committee",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account, streaming platform access"
+		},
+		{
+			"id": "football-watch-1",
+			"title": "Football Watch",
+			"description": "Live match chat: Premier League, UCL, and national team.",
+			"date": "2024-01-28",
+			"time": "10:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/football-watch.jpg",
+			"leagues": ["Premier League", "UCL", "Bangladesh National Team"],
+			"host": "Football Committee",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account"
+		},
+		{
+			"id": "trivia-night-1",
+			"title": "Trivia Night",
+			"description": "Test your knowledge with fun trivia questions about various topics.",
+			"date": "2024-01-31",
+			"time": "7:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/trivia-night.jpg",
+			"topics": ["General Knowledge", "Bangladesh", "Movies", "Sports", "Music"],
+			"host": "Event Team",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account",
+			"prizes": "Discord roles and bragging rights"
+		},
+		{
+			"id": "karaoke-night-1",
+			"title": "Karaoke Night",
+			"description": "Sing your heart out with community karaoke sessions.",
+			"date": "2024-02-01",
+			"time": "8:30 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/karaoke-night.jpg",
+			"languages": ["Bangla", "English", "Hindi"],
+			"host": "Music Committee",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account, microphone"
+		},
+		{
+			"id": "game-night-2",
+			"title": "Game Night",
+			"description": "Party games, custom lobbies, and ranked squad queues.",
+			"date": "2024-02-02",
+			"time": "8:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/game-night.jpg",
+			"games": ["Valorant", "CS2", "PUBG", "Mobile Legends", "EA FC", "GTA Online"],
+			"host": "Community",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account, game installed"
+		},
+		{
+			"id": "movie-night-2",
+			"title": "Movie Night",
+			"description": "Community-voted films with synced watch and chat.",
+			"date": "2024-02-03",
+			"time": "9:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/movie-night.jpg",
+			"genres": ["Bangla Classics", "Bollywood", "Hollywood", "Anime"],
+			"host": "Movie Committee",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account, streaming platform access"
+		},
+		{
+			"id": "monthly-tournament",
+			"title": "Monthly Gaming Tournament",
+			"description": "Competitive gaming tournament with prizes for winners.",
+			"date": "2024-02-10",
+			"time": "6:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/tournament.jpg",
+			"games": ["Valorant", "CS2", "PUBG"],
+			"host": "Tournament Committee",
+			"maxParticipants": 32,
+			"requirements": "Discord account, game installed, registration required",
+			"prizes": "Discord Nitro, custom roles, gift cards"
+		},
+		{
+			"id": "community-meetup",
+			"title": "Community Meetup",
+			"description": "Virtual meetup to discuss community improvements and suggestions.",
+			"date": "2024-02-11",
+			"time": "5:00 PM",
+			"timezone": "GMT+6",
+			"status": "active",
+			"image": "/events/meetup.jpg",
+			"topics": ["Community Feedback", "New Features", "Event Planning"],
+			"host": "Admin Team",
+			"maxParticipants": 50,
+			"requirements": "Discord account, community member"
+		},
+		{
+			"id": "eid-celebration",
+			"title": "Eid Celebration",
+			"description": "Special celebration for Eid with games, music, and community bonding.",
+			"date": "2024-04-10",
+			"time": "8:00 PM",
+			"timezone": "GMT+6",
+			"status": "planned",
+			"image": "/events/eid-celebration.jpg",
+			"activities": ["Special Games", "Cultural Music", "Community Sharing"],
+			"host": "Event Team",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account",
+			"special": "Traditional attire encouraged"
+		},
+		{
+			"id": "world-cup-watch",
+			"title": "World Cup Watch Party",
+			"description": "Watch major football matches together with live commentary.",
+			"date": "2024-06-15",
+			"time": "10:00 PM",
+			"timezone": "GMT+6",
+			"status": "planned",
+			"image": "/events/world-cup.jpg",
+			"matches": ["Bangladesh Matches", "Major Finals", "Semi-Finals"],
+			"host": "Football Committee",
+			"maxParticipants": "unlimited",
+			"requirements": "Discord account",
+			"special": "Country flags and team support encouraged"
+		}
+	],
+	"upcoming": [
+		{
+			"id": "next-game-night",
+			"eventId": "game-night-1",
+			"date": "2024-01-26",
+			"time": "20:00",
+			"timezone": "GMT+6",
+			"status": "confirmed",
+			"participants": 15,
+			"maxParticipants": 50
+		},
+		{
+			"id": "next-movie-night", 
+			"eventId": "movie-night-1",
+			"date": "2024-01-27",
+			"time": "21:00",
+			"timezone": "GMT+6",
+			"status": "confirmed",
+			"participants": 8,
+			"maxParticipants": 100,
+			"movie": "TBD - Community Vote"
+		}
+	],
+	"settings": {
+		"defaultTimezone": "GMT+6",
+		"registrationRequired": false,
+		"autoReminders": true,
+		"reminderTime": "1 hour before",
+		"maxEventsPerDay": 3,
+		"allowOverlap": false
+	}
+}

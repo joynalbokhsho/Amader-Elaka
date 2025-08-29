@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import site from '@/data/site.json';
+import eventsData from '@/data/events.json';
 import { AnimateOnView } from '@/components/AnimateOnView';
 import { Lightbox } from '@/components/Lightbox';
 import { useState } from 'react';
@@ -24,7 +25,7 @@ export default function HomePage() {
           </div>
         </AnimateOnView>
         <div className={styles.heroArt}>
-          <Image src="/logo.svg" alt={site.name} width={240} height={240} priority />
+          <Image src="/logo.svg" alt={site.name} width={0} height={240} className={styles.heroLogo} style={{ width: 'auto', height: '240px' }} priority />
         </div>
       </section>
 
@@ -48,22 +49,100 @@ export default function HomePage() {
       <section id="events" className={styles.sectionAlt}>
         <div className="container">
           <header className={styles.sectionHeader}>
-            <h2>{site.events.title}</h2>
-            <p>{site.events.subtitle}</p>
+            <h2>{eventsData.title}</h2>
+            <p>{eventsData.subtitle}</p>
           </header>
-          <ul className={styles.timeline}>
-            {site.events.list.map((e) => (
-              <AnimateOnView key={e.title}>
-                <li>
-                  <span className={styles.badge}>{e.day}</span>
-                  <div>
-                    <h4>{e.title}</h4>
-                    <p>{e.desc}</p>
-                  </div>
-                </li>
-              </AnimateOnView>
-            ))}
-          </ul>
+          
+          {/* All Events */}
+          <div className={styles.allEvents}>
+            <h3>All Events</h3>
+            <div className={styles.eventGrid}>
+              {eventsData.events
+                .filter(event => event.status === 'active')
+                .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+                .map((event) => (
+                  <AnimateOnView key={event.id} className={styles.eventCard}>
+                    <div className={styles.eventHeader}>
+                      <h4>{event.title}</h4>
+                      <span className={styles.eventDate}>{new Date(event.date).toLocaleDateString('en-US', { 
+                        weekday: 'short', 
+                        month: 'short', 
+                        day: 'numeric' 
+                      })}</span>
+                    </div>
+                    <p className={styles.eventDescription}>{event.description}</p>
+                    <div className={styles.eventDetails}>
+                      <span className={styles.eventTime}>🕐 {event.time}</span>
+                      <span className={styles.eventHost}>👤 {event.host}</span>
+                      <span className={styles.eventCapacity}>👥 {typeof event.maxParticipants === "string" ? "∞" : `${event.maxParticipants} max`}</span>
+                    </div>
+                    {event.requirements && (
+                      <div className={styles.eventRequirements}>
+                        <strong>Requirements:</strong> {event.requirements}
+                      </div>
+                    )}
+                    {event.games && (
+                      <div className={styles.eventGames}>
+                        <strong>Games:</strong> {event.games.join(', ')}
+                      </div>
+                    )}
+                    {event.genres && (
+                      <div className={styles.eventGenres}>
+                        <strong>Genres:</strong> {event.genres.join(', ')}
+                      </div>
+                    )}
+                    {event.leagues && (
+                      <div className={styles.eventLeagues}>
+                        <strong>Leagues:</strong> {event.leagues.join(', ')}
+                      </div>
+                    )}
+                    {event.prizes && (
+                      <div className={styles.eventPrizes}>
+                        <strong>Prizes:</strong> {event.prizes}
+                      </div>
+                    )}
+                  </AnimateOnView>
+                ))}
+            </div>
+          </div>
+
+          {/* Upcoming Events */}
+          {eventsData.upcoming.length > 0 && (
+            <div className={styles.upcomingEvents}>
+              <h3>Upcoming Events</h3>
+              <div className={styles.upcomingGrid}>
+                {eventsData.upcoming.map((upcoming) => {
+                  const event = eventsData.events.find(e => e.id === upcoming.eventId);
+                  if (!event) return null;
+                  
+                  return (
+                    <AnimateOnView key={upcoming.id} className={styles.upcomingCard}>
+                      <div className={styles.upcomingHeader}>
+                        <h4>{event.title}</h4>
+                        <span className={styles.upcomingDate}>{new Date(upcoming.date).toLocaleDateString('en-US', { 
+                          weekday: 'short', 
+                          month: 'short', 
+                          day: 'numeric',
+                          year: 'numeric'
+                        })}</span>
+                      </div>
+                      <p>{event.description}</p>
+                      <div className={styles.upcomingDetails}>
+                        <span>🕐 {upcoming.time}</span>
+                        <span>👥 {upcoming.participants}/{typeof upcoming.maxParticipants === "string" ? "∞" : upcoming.maxParticipants}</span>
+                        <span className={styles.upcomingStatus}>{upcoming.status}</span>
+                      </div>
+                      {upcoming.movie && (
+                        <div className={styles.upcomingMovie}>
+                          <strong>Movie:</strong> {upcoming.movie}
+                        </div>
+                      )}
+                    </AnimateOnView>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -123,21 +202,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="rules" className={styles.section}>
-        <div className="container">
-          <header className={styles.sectionHeader}>
-            <h2>{site.rules.title}</h2>
-            <p>{site.rules.subtitle}</p>
-          </header>
-          <ol className={styles.rules}>
-            {site.rules.items.map((r) => (
-              <AnimateOnView key={r}>
-                <li>{r}</li>
-              </AnimateOnView>
-            ))}
-          </ol>
-        </div>
-      </section>
+
 
       <section id="staff" className={styles.sectionAlt}>
         <div className="container">
@@ -180,32 +245,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="testimonials" className={styles.sectionAlt}>
-        <div className="container">
-          <header className={styles.sectionHeader}>
-            <h2>{site.testimonials.title}</h2>
-            <p>{site.testimonials.subtitle}</p>
-          </header>
-          <div className={styles.quoteGrid}>
-            {site.testimonials.items.map((q) => (
-              <AnimateOnView key={q} className={styles.quote}>“{q}”</AnimateOnView>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="faq" className={styles.section}>
         <div className="container">
           <header className={styles.sectionHeader}>
             <h2>{site.faq.title}</h2>
             <p>{site.faq.subtitle}</p>
           </header>
-          <div className={styles.faq}>
-            {site.faq.items.map((item) => (
-              <AnimateOnView key={item.q}>
-                <details>
-                  <summary>{item.q}</summary>
-                  <p>{item.a}</p>
+          <div className={styles.faqContainer}>
+            {site.faq.items.map((item, index) => (
+              <AnimateOnView key={item.q} className={styles.faqItem}>
+                <details className={styles.faqDetails}>
+                  <summary className={styles.faqSummary}>
+                    <span className={styles.faqQuestion}>{item.q}</span>
+                    <span className={styles.faqIcon}>+</span>
+                  </summary>
+                  <div className={styles.faqAnswer}>
+                    <p>{item.a}</p>
+                  </div>
                 </details>
               </AnimateOnView>
             ))}
@@ -232,5 +288,7 @@ export default function HomePage() {
     </>
   );
 }
+
+
 
 

@@ -1,0 +1,172 @@
+{
+	"title": "Community Rules",
+	"subtitle": "Be kind. Keep it clean. Respect everyone.",
+	"categories": [
+		{
+			"id": "general",
+			"name": "General Rules",
+			"description": "Basic community guidelines that apply to everyone",
+			"icon": "🏠"
+		},
+		{
+			"id": "chat",
+			"name": "Chat & Communication",
+			"description": "Guidelines for text and voice communication",
+			"icon": "💬"
+		},
+		{
+			"id": "gaming",
+			"name": "Gaming Rules",
+			"description": "Specific rules for gaming activities and tournaments",
+			"icon": "🎮"
+		},
+		{
+			"id": "events",
+			"name": "Event Guidelines",
+			"description": "Rules for participating in community events",
+			"icon": "🎉"
+		},
+		{
+			"id": "moderation",
+			"name": "Moderation & Enforcement",
+			"description": "How rules are enforced and moderation works",
+			"icon": "🛡️"
+		}
+	],
+	"rules": [
+		{
+			"id": "respect",
+			"title": "Respect All Members",
+			"description": "Treat everyone with kindness and respect. No discrimination based on race, gender, religion, or background.",
+			"category": "general",
+			"severity": "high",
+			"consequence": "Warning or temporary ban"
+		},
+		{
+			"id": "no-harassment",
+			"title": "No Harassment or Bullying",
+			"description": "Harassment, bullying, or any form of targeted abuse is strictly prohibited.",
+			"category": "general",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "no-toxicity",
+			"title": "No Toxic Behavior",
+			"description": "Avoid toxic behavior, excessive complaining, or creating negative atmosphere.",
+			"category": "general",
+			"severity": "medium",
+			"consequence": "Warning or timeout"
+		},
+		{
+			"id": "appropriate-language",
+			"title": "Appropriate Language",
+			"description": "Keep language family-friendly. No excessive swearing, offensive slurs, or inappropriate content.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Warning or message deletion"
+		},
+		{
+			"id": "no-spam",
+			"title": "No Spam or Flooding",
+			"description": "Don't spam messages, emojis, or flood channels with repetitive content.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Warning or timeout"
+		},
+		{
+			"id": "voice-etiquette",
+			"title": "Voice Channel Etiquette",
+			"description": "Be mindful of others in voice channels. Don't scream, play loud music, or create excessive noise.",
+			"category": "chat",
+			"severity": "medium",
+			"consequence": "Voice timeout or warning"
+		},
+		{
+			"id": "no-cheating",
+			"title": "No Cheating or Hacking",
+			"description": "Cheating, hacking, or using unfair advantages in games is not allowed.",
+			"category": "gaming",
+			"severity": "high",
+			"consequence": "Gaming ban or server ban"
+		},
+		{
+			"id": "sportsmanship",
+			"title": "Good Sportsmanship",
+			"description": "Maintain good sportsmanship in games. No rage quitting, trash talking, or unsportsmanlike conduct.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Warning or gaming timeout"
+		},
+		{
+			"id": "tournament-rules",
+			"title": "Follow Tournament Rules",
+			"description": "When participating in tournaments, follow all specific rules and guidelines provided.",
+			"category": "gaming",
+			"severity": "medium",
+			"consequence": "Tournament disqualification"
+		},
+		{
+			"id": "event-participation",
+			"title": "Active Event Participation",
+			"description": "When joining events, be an active participant. Don't join just to spectate without permission.",
+			"category": "events",
+			"severity": "low",
+			"consequence": "Event removal"
+		},
+		{
+			"id": "event-respect",
+			"title": "Respect Event Hosts",
+			"description": "Listen to event hosts and moderators. Follow their instructions during events.",
+			"category": "events",
+			"severity": "medium",
+			"consequence": "Event ban or warning"
+		},
+		{
+			"id": "no-nsfw",
+			"title": "No NSFW Content",
+			"description": "No adult content, explicit images, or inappropriate material of any kind.",
+			"category": "general",
+			"severity": "high",
+			"consequence": "Immediate ban"
+		},
+		{
+			"id": "channel-purpose",
+			"title": "Use Channels for Purpose",
+			"description": "Post content in appropriate channels. Don't post gaming content in general chat, etc.",
+			"category": "chat",
+			"severity": "low",
+			"consequence": "Message deletion or warning"
+		},
+		{
+			"id": "no-advertising",
+			"title": "No Unauthorized Advertising",
+			"description": "Don't advertise other servers, products, or services without permission.",
+			"category": "general",
+			"severity": "medium",
+			"consequence": "Message deletion and warning"
+		},
+		{
+			"id": "moderator-respect",
+			"title": "Respect Moderators",
+			"description": "Respect moderator decisions. If you disagree, discuss it privately, not in public channels.",
+			"category": "moderation",
+			"severity": "medium",
+			"consequence": "Warning or timeout"
+		},
+		{
+			"id": "appeal-process",
+			"title": "Appeal Process",
+			"description": "If you believe a moderation action was unfair, contact moderators privately to discuss.",
+			"category": "moderation",
+			"severity": "info",
+			"consequence": "N/A"
+		}
+	],
+	"settings": {
+		"lastUpdated": "2024-01-20",
+		"version": "2.0",
+		"contactModerators": "DM any moderator for questions or appeals",
+		"ruleChanges": "Rules may be updated as the community grows"
+	}
+}

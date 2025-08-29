@@ -7,15 +7,8 @@
 	"nav": {
 		"items": [
 			{ "label": "About", "href": "#about" },
-			{ "label": "Events", "href": "/events" },
-			{ "label": "Games", "href": "#games" },
-			{ "label": "Music", "href": "#music" },
-			{ "label": "Movies", "href": "#movies" },
-			{ "label": "Football", "href": "#football" },
+			{ "label": "Events", "href": "#events" },
 			{ "label": "Rules", "href": "/rules" },
-			{ "label": "Staff", "href": "#staff" },
-			{ "label": "Gallery", "href": "#gallery" },
-			{ "label": "FAQ", "href": "#faq" },
 			{ "label": "Contact", "href": "#contact" },
 			{ "label": "Join Discord", "href": "#join" }
 		]
@@ -91,7 +84,7 @@
 		"title": "Gallery",
 		"subtitle": "Moments from our events and voice channels.",
 		"images": [
-			"https://i.ibb.co/FfBtmJ7/bdzone.jpg"
+			"https://cdn.discordapp.com/attachments/1024886137266917406/1410676874165751980/image.png?ex=68b28b77&is=68b139f7&hm=2711f09474933dec79a5d1617217b7be587fa4ebf39b78a3316837a72d582df4"
 		]
 	},
 	"testimonials": {
