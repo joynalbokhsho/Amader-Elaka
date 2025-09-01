@@ -195,14 +195,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="football" className={styles.sectionAlt}>
+      <section id="sports" className={styles.sectionAlt}>
         <div className="container">
           <header className={styles.sectionHeader}>
-            <h2>{site.football.title}</h2>
-            <p>{site.football.subtitle}</p>
+            <h2>{site.sports.title}</h2>
+            <p>{site.sports.subtitle}</p>
           </header>
           <div className={styles.cardRow}>
-            {site.football.items.map((f) => (
+            {site.sports.items.map((f) => (
               <AnimateOnView key={f} className={styles.card}>{f}</AnimateOnView>
             ))}
           </div>

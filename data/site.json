@@ -14,8 +14,8 @@
 		]
 	},
 	"hero": {
-		"title": "Amader Elaka",
-		"subtitle": "Bangladesh-er community on Discord — games, music, movies, football.",
+		"title": "Elakaaaaaaaaa",
+		"subtitle": "Elakay Kono Genjam Nai",
 		"primaryCtaLabel": "Join Discord",
 		"primaryCtaHref": "#join",
 		"secondaryCtaLabel": "Learn More",
@@ -28,7 +28,8 @@
 			{ "title": "Family Vibes", "desc": "Friendly, inclusive, and well-moderated hangout for everyone." },
 			{ "title": "24/7 Voice", "desc": "Jump into voice channels for games, music, and chit-chat." },
 			{ "title": "Weekly Events", "desc": "Tournaments, movie nights, football streams, trivia, and more." },
-			{ "title": "Bangla + English", "desc": "Be yourself. Speak Bangla or English—no pressure." }
+			{ "title": "Bangla + English", "desc": "Be yourself. Speak Bangla or English—no pressure." },
+			{ "title": "Competitions", "desc": "Hosting new competitions for the members with great prize-pool" }
 		]
 	},
 	"events": {
@@ -43,7 +44,7 @@
 	"games": {
 		"title": "Games",
 		"subtitle": "Find teammates, LFG, and community leagues.",
-		"items": ["Valorant", "CS2", "PUBG", "Mobile Legends", "EA FC", "GTA Online", "Dota 2", "Minecraft"]
+		"items": ["Valorant", "CS2", "PUBG", "Mobile Legends", "EA FC", "GTA Online", "Dota 2", "Minecraft", "E-Football"]
 	},
 	"music": {
 		"title": "Music",
@@ -55,8 +56,8 @@
 		"subtitle": "Watch together with synced reactions and polls.",
 		"items": ["Bangla Classics", "Bollywood & Hollywood", "Anime & Series"]
 	},
-	"football": {
-		"title": "Football",
+	"sports": {
+		"title": "Sports",
 		"subtitle": "Match chats, live reactions, and post-game analysis.",
 		"items": ["Live match threads", "Fantasy leagues", "Memes and highlights"]
 	},
