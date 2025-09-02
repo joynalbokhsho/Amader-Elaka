@@ -32,7 +32,20 @@ export default function HomePage() {
           </div>
         </AnimateOnView>
         <div className={styles.heroArt}>
-          <Image src="/logo.svg" alt={site.name} width={0} height={240} className={styles.heroLogo} style={{ width: 'auto', height: '240px' }} priority />
+          <Image 
+            src="/AmaderElakaPng.png" 
+            alt={site.name} 
+            width={400} 
+            height={400} 
+            className={styles.heroLogo} 
+            style={{ 
+              width: 'auto', 
+              height: '300px',
+              maxWidth: '100%',
+              objectFit: 'contain'
+            }} 
+            priority 
+          />
         </div>
       </section>
 

@@ -71,6 +71,16 @@
 	animation: float 6s ease-in-out infinite;
 }
 
+.heroLogo {
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
 @keyframes float { 0% { transform: translateY(0) } 50% { transform: translateY(-8px) } 100% { transform: translateY(0) } }
 
 /* Sections */
